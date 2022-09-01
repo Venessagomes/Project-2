@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+  <title>Cocktail Bazaar</title>
+</head>
+<body>
+<section id="show-page">
+    <div>Title: </div>
+    <div><%= recipe.title %></div>
+    <div>Ingredients: </div>
+    <div><%= recipe.ingredients %></div>
+    <div>Instructions: </div>
+    <div><%= recipe.instructions%></div>
+    <div>Img</div>
+    <img src="<%=recipe.img%>">
+  </section>
+  <br>
+<h2>Leave a Review</h2>
+<form id="add-review-form" action="/reviews/<%=recipe._id%>" method="POST">
+  <label>Rating:</label>
+  <input required name="rating" type="range" min="1" max="5">
+  <label>Review:</label>
+  <textarea required name="content"></textarea>
+  <button type="submit">Submit</button>
+</form>
+  <div class="update-container">
+    <%recipe.reviews.forEach(val =>{%>
+      <hr>
+      <form action="/reviews/<%=recipe._id%>/<%=val._id%>" method="POST">
+        <button type="submit">X</button>
+      </form>
+      <h1><%=val.content%></h1>
+      <h3><%=val.rating%></h3>
+      <form id="add-review-form" action="/reviews/<%=recipe._id%>/<%=val._id%>/update"  method="POST">
+      <label>Rating:</label>
+      <input required name="rating" type="range" min="1" max="5">
+    
+      <label>Review:</label>
+      <textarea required name="content"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <%})%>
+  </div>
+</body>
+</html>

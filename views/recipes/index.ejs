@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+    <title>Cocktail Bazaar</title>
+ 
+</head>
+<body>
+  <div class="card-container">
+    <h1>All Recipes</h1>
+    <div id="list">
+      <% for(let recipes of allRecipes){%>
+        <div class="card">
+        <p><%=recipes.title%></p>
+        <a href="/recipes/<%= recipes._id %>">DETAILS</a>
+        <img class="list-img" src="<%= recipes.img %>">
+        <% }; %>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
