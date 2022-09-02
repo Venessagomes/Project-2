@@ -1,43 +1,19 @@
  *
 body {
   font-family: 'Caveat', cursive;
-  /* margin: 0 auto;
-  max-width: 600px; */
   background-color: black;
   color:#FD49A0;
   height: 100vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-flex-wrap: wrap; */
-font-size: 30px;
+  font-size: 30px;
 }
 
 .list-img {
   width: 300px;
   height: 350px;
   display: grid;
-grid-template-columns: auto auto;
-grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
 }
-
-/* body > nav {
-  grid-area: nav;
-  background-color: #B8C0C2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 20px 0 30px;
-} */
-
-/* div {
-  height: 50px;
-  background-size: cover;
-  position: relative;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
-} */
-
 
 nav > img {
   width: 34px;
@@ -47,7 +23,7 @@ nav > img {
 
 
 nav > a:hover {
- color: white;
+  color: white;
   background-color:p;
 }
 
