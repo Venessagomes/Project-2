@@ -9,6 +9,8 @@
   <title>Cocktail Bazaar</title>
 </head>
 <body>
+  <div class="flex-div">
+  <div style='background-image: url("<%=recipe.img%>")' class="background-image">
 <section id="show-page">
     <div>Title: </div>
     <div><%= recipe.title %></div>
@@ -17,9 +19,11 @@
     <div>Instructions: </div>
     <div><%= recipe.instructions%></div>
     <div>Img</div>
-    <img src="<%=recipe.img%>">
   </section>
+</div>
+  </div>
   <br>
+  <div class="review">
 <h2>Leave a Review</h2>
 <form id="add-review-form" action="/reviews/<%=recipe._id%>" method="POST">
   <label>Rating:</label>
@@ -28,23 +32,23 @@
   <textarea required name="content"></textarea>
   <button type="submit">Submit</button>
 </form>
-  <div class="update-container">
+<div class="update-container">
     <%recipe.reviews.forEach(val =>{%>
-      <hr>
-      <form action="/reviews/<%=recipe._id%>/<%=val._id%>" method="POST">
-        <button type="submit">X</button>
-      </form>
-      <h1><%=val.content%></h1>
-      <h3><%=val.rating%></h3>
+      <form action="/reviews/<%=recipe._id%>/<%=val._id%>/delete" method="POST">
+        <button type="submit">Delete</button>
+        </form>
+      <h5><%=val.content%></h5>
+      <h5><%=val.rating%></h5>
       <form id="add-review-form" action="/reviews/<%=recipe._id%>/<%=val._id%>/update"  method="POST">
       <label>Rating:</label>
-      <input required name="rating" type="range" min="1" max="5">
-    
+      <input required name="rating" type="range" min="1" max="5"><br>
       <label>Review:</label>
       <textarea required name="content"></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit">Edit</button>
+   
     </form>
     <%})%>
   </div>
+</div>
 </body>
 </html>

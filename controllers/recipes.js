@@ -5,7 +5,7 @@ const User = require('../models/user');
 async function index(req,res,next) {
     try{
         let allRecipes = await Recipe.find({})
-        res.render('recipes/index', {allRecipes})
+        res.render('recipes/index', {allRecipes, user: req.user})
     }catch(error) {
         console.log(error)
     }
