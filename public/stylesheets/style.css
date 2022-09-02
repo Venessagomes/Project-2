@@ -53,7 +53,7 @@ nav > a:hover {
 
 .navbar-fixed {
     display: flex;
-    background: white;
+    background: #e0aaff;
     opacity: .8;
     border-radius: 3px;
     padding: 1em;
@@ -63,8 +63,8 @@ nav > a:hover {
   }
 
 .navbar-fixed:hover {
-background-color: #A16AE8;
-opacity: .5;
+background-color: #ff8fab ;
+opacity: .7;
 }
 
 .navbar-fixed > ul {
