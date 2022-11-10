@@ -28,40 +28,33 @@
     <br />
     <div class="review">
       <h2>Leave a Review</h2>
-      <form
-        id="add-review-form"
-        action="/reviews/<%=recipe._id%>"
-        method="POST"
-      >
+      <form class="add-form" action="/reviews/<%=recipe._id%>" method="POST">
         <label>Rating:</label>
-        <input required name="rating" type="range" min="1" max="5" />
+        <input class="input" required name="rating" type="range" min="1" max="5" />
         <label>Review:</label>
         <textarea required name="content"></textarea>
         <button class="button-75">Submit</button>
       </form>
-      <div class="update-container">
-        <%recipe.reviews.forEach(val =>{%>
-        <form
-          action="/reviews/<%=recipe._id%>/<%=val._id%>/delete"
-          method="POST"
-        >
+      <%recipe.reviews.forEach(val =>{%>
+        <div class="update-container">
+        <div class="delete">
+          <h6><%=val.content%></h6>
+        <h6><%=val.rating%></h6>
+        <form action="/reviews/<%=recipe._id%>/<%=val._id%>/delete" method="POST">
           <button class="button-75">Delete</button>
         </form>
-        <h5><%=val.content%></h5>
-        <h5><%=val.rating%></h5>
-        <form
-          id="add-review-form"
-          action="/reviews/<%=recipe._id%>/<%=val._id%>/update"
-          method="POST"
-        >
+        </div>
+        <div class="rate">
+        <form action="/reviews/<%=recipe._id%>/<%=val._id%>/update" method="POST">
           <label>Rating:</label>
-          <input required name="rating" type="range" min="1" max="5" /><br />
+          <input class="input" required name="rating" type="range" min="1" max="5" /><br />
           <label>Review:</label>
           <textarea required name="content"></textarea>
           <button class="button-75">Edit</button>
         </form>
+        </div>
+</div>
         <%})%>
-      </div>
     </div>
   </body>
 </html>

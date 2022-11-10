@@ -19,12 +19,8 @@
 }
 
 #new-form *,
-#add-review-form *,
-#add-performer-form * {
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 5px;
-}
+*,
+#add-performer-form * 
 
 #new-form input[type="submit"] {
   grid-column: span 2;
@@ -79,12 +75,7 @@ li {
   font-weight: bold;
 }
 
-.update-container {
-  border: 1px solid whitesmoke;
-  height: 30%;
-  width: 30%;
-  margin-bottom: 50px;
-}
+
 
 
  */
@@ -173,14 +164,14 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Codec cold", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   min-height: 55px;
   justify-content: center;
   letter-spacing: 0.4px;
   line-height: 1;
   min-width: 150px;
-  max-width: 100%;
+  max-width: 100px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 3px;
@@ -222,7 +213,6 @@ body {
 }
 
 img {
-  background-color: red;
   min-width: 300px;
   min-height: 400px;
   max-height: 500px;
@@ -232,3 +222,31 @@ img {
 .li-recipe {
   list-style-type: none;
 }
+
+.add-form {
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  margin: 30px;
+  border:#e9c46a 2px solid;
+  border-radius: 5px;
+}
+
+.update-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  max-height: 400px;
+  padding: 10px;
+  margin: 10px;
+  border:#e9c46a 2px solid;
+  border-radius: 5px;
+}
+
+/* .input {
+  color: #e9c46a;
+} */
