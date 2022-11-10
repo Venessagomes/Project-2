@@ -11,17 +11,15 @@
 </head>
 <body>
   <%- include("../partials/header")%>
+  <div class="recipe">All Recipes</div>
   <div class="card-container">
-    <h1>All Recipes</h1>
-    <div id="list">
-      <% for(let recipes of allRecipes){%>
-        <div class="card">
+    <% for(let recipes of allRecipes){%>
+    <div class="card">
+        <img src="<%= recipes.img %>">
         <p><%=recipes.title%></p>
         <button class="button-75"><a href="/recipes/<%= recipes._id %>">DETAILS</a></button>
-        <div class="list-img" ><img src="<%= recipes.img %>"></div>
-        <% }; %>
-        </div>
-    </div>
+      </div>
+      <% }; %>
   </div>
 </body>
 </html>
