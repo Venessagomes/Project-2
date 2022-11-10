@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
-  <title>Cocktail Bazaar</title>
-</head>
-<body>
-  <div class="flex-div">
-  <div style='background-image: url("<%=recipe.img%>")' class="background-image">
-<section id="show-page">
-    <div>Title: </div>
-    <div><%= recipe.title %></div>
-    <div>Ingredients: </div>
-    <div><%= recipe.ingredients %></div>
-    <div>Instructions: </div>
-    <div><%= recipe.instructions%></div>
-    <div>Img</div>
-  </section>
-</div>
-  </div>
-  <br>
-  <div class="review">
-<h2>Leave a Review</h2>
-<form id="add-review-form" action="/reviews/<%=recipe._id%>" method="POST">
-  <label>Rating:</label>
-  <input required name="rating" type="range" min="1" max="5">
-  <label>Review:</label>
-  <textarea required name="content"></textarea>
-  <button type="submit">Submit</button>
-</form>
-<div class="update-container">
-    <%recipe.reviews.forEach(val =>{%>
-      <form action="/reviews/<%=recipe._id%>/<%=val._id%>/delete" method="POST">
-        <button type="submit">Delete</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>COCKTAIL BAZAAR</title>
+  </head>
+  <body>
+    <div>
+      <div style="background-image: url('<%=recipe.img%>')" class="recipe-img">
+        <section id="show-page">
+          <div>Title:</div>
+          <div><%= recipe.title %></div>
+          <div>Ingredients:</div>
+          <div><%= recipe.ingredients %></div>
+          <div>Instructions:</div>
+          <div><%= recipe.instructions%></div>
+          <div>Img</div>
+        </section>
+      </div>
+    </div>
+    <br />
+    <div class="review">
+      <h2>Leave a Review</h2>
+      <form
+        id="add-review-form"
+        action="/reviews/<%=recipe._id%>"
+        method="POST"
+      >
+        <label>Rating:</label>
+        <input required name="rating" type="range" min="1" max="5" />
+        <label>Review:</label>
+        <textarea required name="content"></textarea>
+        <button class="button-75">Submit</button>
+      </form>
+      <div class="update-container">
+        <%recipe.reviews.forEach(val =>{%>
+        <form
+          action="/reviews/<%=recipe._id%>/<%=val._id%>/delete"
+          method="POST"
+        >
+          <button class="button-75">Delete</button>
         </form>
-      <h5><%=val.content%></h5>
-      <h5><%=val.rating%></h5>
-      <form id="add-review-form" action="/reviews/<%=recipe._id%>/<%=val._id%>/update"  method="POST">
-      <label>Rating:</label>
-      <input required name="rating" type="range" min="1" max="5"><br>
-      <label>Review:</label>
-      <textarea required name="content"></textarea>
-      <button type="submit">Edit</button>
-   
-    </form>
-    <%})%>
-  </div>
-</div>
-</body>
+        <h5><%=val.content%></h5>
+        <h5><%=val.rating%></h5>
+        <form
+          id="add-review-form"
+          action="/reviews/<%=recipe._id%>/<%=val._id%>/update"
+          method="POST"
+        >
+          <label>Rating:</label>
+          <input required name="rating" type="range" min="1" max="5" /><br />
+          <label>Review:</label>
+          <textarea required name="content"></textarea>
+          <button class="button-75">Edit</button>
+        </form>
+        <%})%>
+      </div>
+    </div>
+  </body>
 </html>

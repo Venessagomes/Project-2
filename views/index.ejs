@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cocktail</title>
+    <title>Cocktail Bazaar</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet" />
   </head>
   <body id="main-page">
     <nav class="navbar-fixed">
-        <a href="#">Cocktail Bazaar</a>
+        <h1>COCKTAIL BAZAAR</h1>
         <ul>
           <li>
             <% if (user) { %>
-             <a href="/recipes" type="submit">Explore all Recipes</a>
-              <a href="/logout"><i class="material-icons left">logout</i>Log Out</a>
+             <h4><a href="/recipes" type="submit">RECIPES</a>
+              <a href="/logout"><i class="material-icons left">logout</i>LOGOUT</a>
             <% } else { %>
-              <a href="/auth/google"><i class="material-icons left">login</i>Login</a>
+              <a href="/auth/google"><i class="material-icons left">login</i>LOGIN</a> </h4>
             <% } %>
           </li>
         </ul>
