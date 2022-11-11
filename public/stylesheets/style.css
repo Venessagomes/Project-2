@@ -100,7 +100,6 @@ li {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: red;
   font-family: "Josefin Slab", serif;
 }
 
@@ -116,23 +115,31 @@ a {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 500px;
+  height: 500px;
 }
 
 #show-page:hover {
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  color: #fefae0;
   opacity: 0.8;
   font-size: x-large;
   font-weight: 600;
   transition: all 0.5s ease-out;
+  width: 450px;
 }
 
 .recipe-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
+  max-height: 700px;
   width: 100vw;
+  max-width: 800px;
 }
 
 .review {
@@ -190,6 +197,13 @@ body {
   padding-top: 100px;
 }
 
+.recipe-show {
+  width: 100vw;
+  font-size: 30px;
+  text-align: center;
+  color: #274c77;
+  padding-top: 50px;
+}
 .card-container {
   display: flex;
   text-align: center;
@@ -218,12 +232,19 @@ img {
   max-height: 500px;
   max-width: 400px;
 }
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .li-recipe {
   list-style-type: none;
 }
 
 .add-form {
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   padding: 20px;
   display: flex;
@@ -233,7 +254,6 @@ img {
 }
 
 .update-container {
-  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,12 +261,28 @@ img {
   align-items: center;
   max-width: 800px;
   max-height: 400px;
-  padding: 10px;
   margin: 10px;
   border:#e9c46a 2px solid;
   border-radius: 5px;
+  padding: 10px;
 }
-
+.rate {
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  font-size: medium;
+}
+.review1 {
+  margin-bottom: 26px;
+}
+.submit-button {
+  margin-right: 15px;
+}
 /* .input {
   color: #e9c46a;
 } */
