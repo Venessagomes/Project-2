@@ -2,22 +2,6 @@
 
 Home-bartending is getting more and more popular, and with the help of this app, you can create a drink in no time. You just need the right ingredients, and you are sorted. 
 
-<p align="center" width="100%">
-<a href="https://imgur.com/w51c2uO"><img src="https://i.imgur.com/w51c2uO.png" title="source: imgur.com" /></a>
-</p>
-
-<p align="center" width="100%">
-<a href="https://imgur.com/LLXS9kt"><img src="//s.imgur.com/min/embed.js" title="source: imgur.com" /></a>
-</p>
-
-<p align="center" width="100%">
-   <a href="https://imgur.com/q3FV2Di"><img src="https://i.imgur.com/q3FV2Di.png" title="source: imgur.com" /></a>
-</p>
-
-<p align="center" width="100%">
-   <a href="https://imgur.com/FSiJ2GB"><img src="https://i.imgur.com/FSiJ2GB.png" title="source: imgur.com" /></a>
-</p>
-
 
 
 # Getting Started
@@ -26,18 +10,18 @@ This app allows you to sign in using Google Authentication and then takes the us
 
 
 # Technologies used:
-• HTML
-• CSS
-• Javascript
-• Express
-• Node.js
-• Mongodb
-• Mongoose
-• Passport
-• EJS
-• Passport-google-oauth
-• .env
-• Material Icons
+- HTML
+- CSS
+- Javascript
+- Express
+- Node.js
+- Mongodb
+- Mongoose
+- Passport
+- EJS
+- Passport-google-oauth
+- .env
+- Material Icons
 
 
 # Link to the app:
