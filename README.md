@@ -3,6 +3,9 @@
 Home-bartending is getting more and more popular, and with the help of this app, you can create a drink in no time. You just need the right ingredients, and you are sorted. 
 
 
+<p align="center" width="100%">
+<a href="https://imgur.com/kfqtBbA"><img src="//s.imgur.com/min/embed.js" charset="utf-8"></a>
+</p>
 
 # Getting Started
 
