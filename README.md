@@ -4,7 +4,13 @@ Home-bartending is getting more and more popular, and with the help of this app,
 
 
 <p align="center" width="100%">
-<a href="https://imgur.com/kfqtBbA"><img src="//s.imgur.com/min/embed.js" charset="utf-8"></a>
+<a href="https://imgur.com/CqU8Maa"><img src="https://i.imgur.com/CqU8Maa.png" title="source: imgur.com" /></a>
+</p>
+<p align="center" width="100%">
+<a href="https://imgur.com/ZBUL610"><img src="https://i.imgur.com/ZBUL610.png" title="source: imgur.com" /></a>
+</p>
+<p align="center" width="100%">
+<a href="https://imgur.com/0mS29ms"><img src="https://i.imgur.com/0mS29ms.jpg" title="source: imgur.com" /></a>
 </p>
 
 # Getting Started
