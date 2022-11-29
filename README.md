@@ -4,13 +4,13 @@ Home-bartending is getting more and more popular, and with the help of this app,
 
 
 <p align="center" width="100%">
-<a href="https://imgur.com/CqU8Maa"><img src="https://i.imgur.com/CqU8Maa.png" title="source: imgur.com" /></a>
+<p align="center" width="100%">
+<a href="https://imgur.com/0mS29ms"><img src="https://i.imgur.com/0mS29ms.jpg" title="source: imgur.com" /></a>
 </p>
 <p align="center" width="100%">
 <a href="https://imgur.com/ZBUL610"><img src="https://i.imgur.com/ZBUL610.png" title="source: imgur.com" /></a>
 </p>
-<p align="center" width="100%">
-<a href="https://imgur.com/0mS29ms"><img src="https://i.imgur.com/0mS29ms.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/CqU8Maa"><img src="https://i.imgur.com/CqU8Maa.png" title="source: imgur.com" /></a>
 </p>
 
 # Getting Started
@@ -34,7 +34,7 @@ This app allows you to sign in using Google Authentication and then takes the us
 
 
 # Link to the app:
-- [Cocktail Bazaar](http://cocktailbazaar.herokuapp.com/users)
+- [Cocktail Bazaar](https://cocktail-bazaar.onrender.com)
 - [Trello](https://trello.com/b/CCpMNGgb/cocktail-bazaar)
 - [Wireframes](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Cc30b1970a35345cdadae32b43ee982c9/projects/MCBX9RJXfob/pages/D79145dd8c7f08524265fb0a42d414b31/image/D79145dd8c7f08524265fb0a42d414b31.png?1661526722545)
 
